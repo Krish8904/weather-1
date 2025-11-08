@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="weather.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <main class="app">
+    <h1 class="title">Weather Checker</h1>
+    <form id="searchForm" class="search">
+      <input id="cityInput" name="city" type="text" placeholder="Enter a city" autocomplete="off" required />
+      <button id="submitBtn" type="submit">Search</button>
+    </form>
+    <div id="message"></div>
+    <section id="weatherCard" class="card hidden">
+      <header class="card-header">
+        <h2 id="locationName"></h2>
+        <div id="timeLocal" class="local-time"></div>
+      </header>
+      <div class="card-body">
+        <img id="weatherIcon" alt="" class="weather-icon hidden" />
+        <div class="main-info">
+          <div id="temp" class="temp"></div>
+          <div id="desc" class="desc"></div>
+        </div>
+        <ul class="extras">
+          <li><strong>Feels:</strong> <span id="feels"></span></li>
+          <li><strong>Humidity:</strong> <span id="humidity"></span></li>
+          <li><strong>Wind:</strong> <span id="wind"></span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <script src="weather.js"></script>
+</body>
+
+</html>
